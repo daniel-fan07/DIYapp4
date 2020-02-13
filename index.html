@@ -143,7 +143,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Your Results!</h1>
 	</div>
 	<div id="content" class="w3-container">
-	<p>"Results"</p>   
+	var resultText = document.getElementById("results");
+ 	<p id="results"></p> tags with the innerHTML command like this:
+	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+
 	
 			
 	
