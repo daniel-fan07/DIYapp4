@@ -80,11 +80,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     z-index: 1;
 }
 </style>
-// These lines of code format the page and include a title:	
+<!--These lines of code format the page and include a title-->	
 <body>
 <div id="header" class="w3-container w3-flat-carrot">	
 	<h1>Cold or Allergies?</h1>
-// All of the div tags function to divide contents within the same page:
+<!--All of the div tags function to divide contents within the same page:-->
 </div>
 	
 <div id="content" class="w3-container">
@@ -97,62 +97,62 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
 
 <div class="page" id="one"> <!-- Creates the Layout for Page One of the Site-->
-	<div id="header" class="w3-container w3-flat-carrot"> // Header Formatting
-		<h1>Question #1</h1> // Header Title
-	</div> // Divides contents of the page
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Header Formatting-->
+		<h1>Question #1</h1> <!-- Header Title -->
+	</div> <!-- Divides contents of the page-->
 	
     	<div id="content" class="w3-container"> 
-        	<p>Are your eyes itchy or watery?</p>   // Inputs Question on Page 2
-	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-red"> Yes </a> // This button says Yes in response to above question and stores data
-	<a href="#two" onclick="coldAdd();" class="w3-btn w3-green"> No </a> // This button says No in response above question and stores data
+        	<p>Are your eyes itchy or watery?</p>   <!-- Inputs Question on Page 2-->
+	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
+	<a href="#two" onclick="coldAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response above question and stores data-->
     	</div>
 </div>
 
-<div class="page" id="two"> // Identifies the Page 
-	<div id="header" class="w3-container w3-flat-carrot"> // Page Layout
-		<h1>Question #2</h1> // Defines the header of Page 2
+<div class="page" id="two"> <!-- Identifies the Page --> 
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout-->
+		<h1>Question #2</h1> <!-- Defines the header of Page 2-->
 	</div>
 	<div id="content" class="w3-container">
-	<p>Do you have a fever?</p> // This is the Title displayed on Page 2
-	<a href="#three" onclick="coldAdd();" class="w3-btn w3-red"> Yes </a> // This button says Yes in response to above question and stores data
-	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-green"> No </a>// This button says No in response to above question and stores data	
+	<p>Do you have a fever?</p> <!-- This is the Title displayed on Page 2-->
+	<a href="#three" onclick="coldAdd();" class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data -->
+	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data -->	
 	</div>
 	
 </div>
 	
-<div class="page" id="three"> // Identifies the Page 
-	<div id="header" class="w3-container w3-flat-carrot"> // Page Layout
-		<h1>Question #3</h1>  // This is the Title displayed on Page 3
+<div class="page" id="three"> <!-- Identifies the Page -->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout -->
+		<h1>Question #3</h1>  <!-- This is the Title displayed on Page 3 -->
 	</div>
 	<div id="content" class="w3-container">
 	<p>Do you have a sore throat?</p>   
-	<a href="#four" onclick="coldAdd();" class="w3-btn w3-red"> Yes </a> // This button says Yes in response to above question and stores data
-	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-green"> No </a> // This button says No in response to above question and stores data	
+	<a href="#four" onclick="coldAdd();" class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
+	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data-->	
 </div>
 	
-<div class="page" id="four"> // Identifies the Page 
-	<div id="header" class="w3-container w3-flat-carrot"> // Page Layout
-		<h1>Question #4</h1> // This is the Title displayed on Page 4
+<div class="page" id="four"> <!-- Identifies the Page -->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout --> 
+		<h1>Question #4</h1> <!-- This is the Title displayed on Page 4 -->
 	</div>
 	<div id="content" class="w3-container">
-	<p>Are your Symptoms Seasonal or Chronic?</p>   // This is the question displayed on Page 4
-	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-red"> Yes </a> // This button says Yes in response to above question and stores data
-	<a href="#five" onclick="coldAdd();" class="w3-btn w3-green"> No </a> // This button says No in response to above question and stores data	
+	<p>Are your Symptoms Seasonal or Chronic?</p>   <!-- This is the question displayed on Page 4 -->
+	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
+	<a href="#five" onclick="coldAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data-->
 </div>	
 
-<div class="page" id="five"> // Identifies the Page 
-	<div id="header" class="w3-container w3-flat-carrot"> // Page Layout
-		<h1>Results Processing </h1> // This is the Title displayed on Page 5
+<div class="page" id="five"> <!-- Identifies the Page -->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout -->
+		<h1>Results Processing </h1> <!-- This is the Title displayed on Page 5 -->
 	</div>
 	<div id="content" class="w3-container"> 
-	<a href="#six" onclick="results();" class="w3-btn w3-green"> Click here to View Results </a>
+	<a href="#six" onclick="results();" class="w3-btn w3-green"> Click here to View Results </a> <!-- This button is used to view results and triggers the function -->
 		
-<div class="page" id="six"> // Identifies the Page 
-	<div id="header" class="w3-container w3-flat-carrot"> // Page Layout
-		<h1>Your Results!</h1> // This is the Title displayed on Page 6 
-	<p id="results"></p> // Uses the function to recall our results
+<div class="page" id="six"> <!-- Identifies the Page -->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout -->
+		<h1>Your Results!</h1> <!-- This is the Title displayed on Page 6 -->
+	<p id="results"></p> <!-- Uses the function to recall our results -->
 </div>
-		<p> Page 6 </p> // Labels the Final Page
+		<p> Page 6 </p> <!-- Labels the Final Page -->
 	
 </div>
 	
@@ -163,7 +163,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 			
 	
-<footer class="w3-bottom w3-container w3-flat-carrot"> // Footer Layout
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- Footer Layout -->
 	<p>DIY!</p>
 </footer>
 
