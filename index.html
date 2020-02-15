@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Andrew Chahda
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -20,14 +20,14 @@ Brief Description of Goal of Code:
 The goal of this code is to help a patient or user distinguish between allergies and the common cold. The code is supposed to ask a series of questions to diagnose one or the other.
  
 Known Issues:
-
+This app is extremely basic and doesn't include a comprehensive amount of questions to distinguish between cold and allergies.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
-   <head> 
-      <title>Hello World</title>  
+   <head>  
+      <title>Cold or Allergies</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -35,24 +35,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 	<script>
-	var allergy_count = 0;
-        var cold_count = 0;
-	var resultText = document.getElementById("results");
+	var allergy_count = 0; // creates a variable known as allergy_count and stores the initial value as zero (tally of symptoms leaning towards allergy diagnosis)
+        var cold_count = 0; // creates a variable known as cold_count and stores the initial value as zero. (tally of symptoms leaning towards cold diagnosis)
+	var resultText = document.getElementById("results"); // creates variable for our actual final result
 
         function allergyAdd(){
-		allergy_count = allergy_count + 1;
+		allergy_count = allergy_count + 1; // this function will help us add one each time a symptom is linked to allergies.
 		
         }
 
         function coldAdd(){
-		cold_count = cold_count + 1;
+		cold_count = cold_count + 1; // this function will help us add one each time a symptom is linked to cold.
         }
-	var allergyPercent=0;
-	var coldPercent=0;
-	function results(){
-		var allergyPercent= allergy_count/ (allergy_count + cold_count) * 100;
-		var coldPercent= cold_count/ (allergy_count+ cold_count)* 100; 
-		var resultText = document.getElementById("results");
+	var allergyPercent=0; // initial value for variable of allergy in  percentage form
+	var coldPercent=0; // initial value for variable of cold in  percentage form
+	function results(){ // function that allows us to get our final result
+		var allergyPercent= allergy_count/ (allergy_count + cold_count) * 100; // a variable to create percent likelihood of allergies
+		var coldPercent= cold_count/ (allergy_count+ cold_count)* 100; // a variable to create percent likelihood of cold
+		var resultText = document.getElementById("results"); // 
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold =" + coldPercent + "%"; 
 
         }
