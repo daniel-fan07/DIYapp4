@@ -27,7 +27,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
    <head>  
-      <title>Cold or Allergies</title>  
+      <title>Do you have COVID-19?</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -88,7 +88,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p> The COVID-19 epidemic has shaken the entire world with impacts on health, safety, and the economy. It is important to maintain social distancing as instructed by government officials. However, for essential workers and even for the general public it is important to properly diagnose COVID-19.Are you feeling like you might have symptoms of COVID-19? Answer a few short questions to find out if you should seek treatment or  an official test.!</p>
 	
 	<a href="#one" class="w3-btn w3-orange"> Get Started </a> <!-- Creates an Orange Button that directs the user to the next page --> 
 	
@@ -102,7 +102,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!-- Divides contents of the page-->
 	
     	<div id="content" class="w3-container"> 
-        	<p>Are your eyes itchy or watery?</p>   <!-- Inputs Question on Page 2-->
+        	<p>Are you experiencing shortness of Breath?</p>   <!-- Inputs Question on Page 2-->
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response above question and stores data-->
     	</div>
@@ -113,7 +113,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question #2</h1> <!-- Defines the header of Page 2-->
 	</div>
 	<div id="content" class="w3-container">
-	<p>Do you have a fever?</p> <!-- This is the Title displayed on Page 2-->
+	<p>Have you been sneezing throughout the length of the onset of your symptoms?</p> <!-- This is the Title displayed on Page 2-->
 	<a href="#three" onclick="coldAdd();" class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data -->
 	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data -->	
 	</div>
@@ -125,7 +125,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question #3</h1>  <!-- This is the Title displayed on Page 3 -->
 	</div>
 	<div id="content" class="w3-container">
-	<p>Do you have a sore throat?</p>   
+	<p>Do you have a particularly dry cough?</p>   
 	<a href="#four" onclick="coldAdd();" class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
 	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data-->	
 </div>
@@ -135,12 +135,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question #4</h1> <!-- This is the Title displayed on Page 4 -->
 	</div>
 	<div id="content" class="w3-container">
-	<p>Are your Symptoms Seasonal or Chronic?</p>   <!-- This is the question displayed on Page 4 -->
+	<p>Have you experienced a fever? (Temperature above 100.4 degrees Fahrenheit)</p>   <!-- This is the question displayed on Page 4 -->
+	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
+	<a href="#five" onclick="coldAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data-->
+</div>	
+<div class="page" id="five"> <!-- Identifies the Page -->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout --> 
+		<h1>Question #5</h1> <!-- This is the Title displayed on Page 4 -->
+	</div>
+	<div id="content" class="w3-container">
+	<p>Have you experienced fatigue and feeling tired and weak?</p>   <!-- This is the question displayed on Page 4 -->
 	<a href="#five" onclick="allergyAdd();"class="w3-btn w3-red"> Yes </a> <!-- This button says Yes in response to above question and stores data-->
 	<a href="#five" onclick="coldAdd();" class="w3-btn w3-green"> No </a> <!-- This button says No in response to above question and stores data-->
 </div>	
 
-<div class="page" id="five"> <!-- Identifies the Page -->
+<div class="page" id="six"> <!-- Identifies the Page -->
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- Page Layout -->
 		<h1>Results Processing </h1> <!-- This is the Title displayed on Page 5 -->
 	</div>
