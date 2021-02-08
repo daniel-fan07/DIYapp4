@@ -8,6 +8,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
 Authors in chronological order of contribution:
 Tim Riedel
 Andrew Chahda
+Daniel Fan
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,17 +18,18 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-The goal of this code is to help a patient or user distinguish between allergies and the common cold. The code is supposed to ask a series of questions to diagnose one or the other.
+The goal of this code is to help a user determine for another person whether they are experiencing a stroke or not. 
  
 Known Issues:
-This app is extremely basic and doesn't include a comprehensive amount of questions to distinguish between cold and allergies.
+While the FASTER acroymn has been proven to diagnose many cases of stroke and get patients to the help that they need across the US, there is always a more accurate 
+basis to which a stroke can be identified in a hospital setting (vitals for example) rather than strictly observing physical symptoms. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
    <head>  
-      <title>Do you have COVID-19?</title>  
+      <title>Is it a stroke?</title>  <!-- changed the title to match purpose of this code -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -35,25 +37,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 	<script>
-	var allergy_count = 0; // creates a variable known as allergy_count and stores the initial value as zero (tally of symptoms leaning towards allergy diagnosis)
-        var cold_count = 0; // creates a variable known as cold_count and stores the initial value as zero. (tally of symptoms leaning towards cold diagnosis)
-	var resultText = document.getElementById("results"); // creates variable for our actual final result
+	var stroke_count = 0; // creates a variable known as stroke_count and stores the initial value as zero (tally of symptoms leaning towards stroke diagnosis)
+        var nonstroke_count = 0; // creates a variable known as nonstroke_count and stores the initial value as zero. (tally of symptoms leaning towards a non-stroke diagnosis)
+	// var resultText = document.getElementById("results"); // creates variable for our actual final result
 
-        function allergyAdd(){
-		allergy_count = allergy_count + 1; // this function will help us add one each time a symptom is linked to allergies.
+        function strokeAdd(){
+		stroke_count = stroke_count + 1; // this function will help us add one each time a symptom is linked to stroke.
 		
         }
 
-        function coldAdd(){
-		cold_count = cold_count + 1; // this function will help us add one each time a symptom is linked to cold.
+        function nonstrokeAdd(){
+		nonstroke_count = nonstroke_count + 1; // this function will help us add one each time a symptom is not linked to a stroke.
         }
-	var allergyPercent=0; // initial value for variable of allergy in  percentage form
-	var coldPercent=0; // initial value for variable of cold in  percentage form
+	var strokePercent=0; // initial value for variable of stroke in  percentage form
+	var nonstrokePercent=0; // initial value for variable of non-stroke in  percentage form
 	function results(){ // function that allows us to get our final result
-		var allergyPercent= allergy_count/ (allergy_count + cold_count) * 100; // a variable to create percent likelihood of allergies
-		var coldPercent= cold_count/ (allergy_count+ cold_count)* 100; // a variable to create percent likelihood of cold
+		var strokePercent= stroke_count/ (stroke_count + nonstroke_count) * 100; // a variable to create percent likelihood of a stroke 
+		var nonstrokePercent= nonstroke_count/ (stroke_count+ nonstroke_count)* 100; // a variable to create percent likelihood of the patient not having a stroke
 		var resultText = document.getElementById("results"); // 
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold =" + coldPercent + "%"; 
+		resultText.innerHTML = "Probability it is a stroke =" + allergyPercent + "%<br> Probability it is a cold =" + coldPercent + "%"; 
 
         }
   	</script>
